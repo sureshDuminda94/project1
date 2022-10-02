@@ -37,7 +37,7 @@ const styles = StyleSheet.create({
   box3: {
     width: 100,
     height: 100,
-    backgroundColor: 'orange',
+    backgroundColor: 'red',
   },
 
   imageCreate: {
