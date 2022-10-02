@@ -13,7 +13,7 @@ class Homecc extends React.Component {
 
   onButtonPress() {
     this.setState({
-      count: this.state.count + 1,
+      count: this.state.count - 1,
     });
   }
 
