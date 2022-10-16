@@ -7,7 +7,9 @@ const Assignment = () => {
   }, []);
 
   const functionOne = () => {
+    /*
     const name = 'Apple';
+    
     // If CONDITIONS
     if (name === 'BlueBerry') {
       console.log('Fruit 1', name);
@@ -33,14 +35,14 @@ const Assignment = () => {
     //     break;
     // }
 
-    const marks = 75;
+   
     // 75 -> A
     // 65 - 75 -> B
     // 55 - 65 -> C
     // 35 - 55 -> s
     // 35 - W
 
-    if (marks >= 75) {
+     if (marks >= 75) {
       console.log('A');
     } else if (marks >= 65) {
       console.log('B');
@@ -51,6 +53,42 @@ const Assignment = () => {
     } else {
       console.log('w');
     }
+
+  
+
+    switch (marks) {
+      case 1:
+        marks >= 75;
+        console.log('A');
+        break;
+      case 2:
+        marks >= 65;
+        console.log('B');
+        break;
+        marks >= 55;
+        console.log('c');
+        break;
+        marks >= 35;
+        console.log('s');
+        break;
+
+      default:
+        console.log('w');
+        break;
+    }
+*/
+    //ternary operator
+
+    const marks = 75;
+    marks >= 75
+      ? console.log('A')
+      : marks >= 65
+      ? console.log('B')
+      : marks >= 55
+      ? console.log('C')
+      : marks >= 35
+      ? console.log('S')
+      : console.log('W');
   };
 
   return (
