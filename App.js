@@ -1,27 +1,32 @@
-import react from 'react';
-import {StyleSheet, View, Text, Button} from 'react-native';
+// In App.js in a new project
 
-const App = () => {
+import * as React from 'react';
+import {View, Text} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import Lesson_02_FlatList from './src/home/Lesson_02_FlatList';
+
+function HomeScreen() {
   return (
-    <View>
-      <Text>Suresh dumind</Text>
+    <View style={{flex: 1, alignItems: 'center', justifyContent: 'center'}}>
+      <Text>Home Screen</Text>
     </View>
   );
 }
 
-const styles = StyleSheet.create({
-  body: {
-    backgroundColor: '#FFFFFF',
-    alignItems: 'center',
-    justifyContent: 'center',
-    flex: 1,
-  },
+const Stack = createNativeStackNavigator();
 
-  text: {
-    color: '#ff3322',
-    fontSize: 20,
-    fontStyle: 'italic',
-  },
-});
+function App() {
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen name="Lesson2" component={Lesson_02_FlatList} />
+      </Stack.Navigator>
+      <Stack.Navigator>
+        <Stack.Screen name="Lesson2" component={Lesson_02_FlatList} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
 
 export default App;
